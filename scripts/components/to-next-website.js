@@ -20,6 +20,14 @@ const changePageAnimation = () => {
             delay: 0.15,
         }
     );
+    TweenMax.to(
+        ".to-next-websites",
+        .1,
+        {
+            opacity: 0,
+            delay: 3,
+        }
+    );
 }
 
 const delayLink = (URL) => {
