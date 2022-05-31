@@ -86,9 +86,10 @@ const StartAnimationOnClick = (el) => {
     );
     TweenMax.to(
         newFlyElement[el],
-        .3,
+        .1,
         {   
             opacity: 0,
+            delay: 0.4,
         }
     );
 }
