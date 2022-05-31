@@ -1,5 +1,12 @@
 const changePageAnimation = () => {
     TweenMax.to(
+        ".to-next-websites",
+        .01,
+        {
+            opacity: 1,
+        }
+    );
+    TweenMax.to(
         ".first-popup",
         .7,
         {

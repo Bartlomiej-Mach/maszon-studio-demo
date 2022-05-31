@@ -75,6 +75,13 @@ const StartAnimationOnClick = (el) => {
             ease: "expo.in",
         }
     );
+    TweenMax.to(
+        newFlyElement[el],
+        .3,
+        {   
+            opacity: 0,
+        }
+    );
 }
 
 for(let i = 0; i < projectLinks.length; i++) {
