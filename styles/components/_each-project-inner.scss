@@ -4,6 +4,7 @@
     height: 100vh;
     bottom: -100vh;
     z-index: 100;
+    pointer-events: none;
     &__img {
         width: 100%;
         height: 100%;

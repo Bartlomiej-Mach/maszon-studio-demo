@@ -3333,6 +3333,7 @@ body::-webkit-scrollbar-thumb {
   height: 100vh;
   bottom: -100vh;
   z-index: 100;
+  pointer-events: none;
 }
 
 .project-img-inner__img {
