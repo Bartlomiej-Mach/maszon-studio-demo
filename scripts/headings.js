@@ -26,7 +26,7 @@ authorInit = () => {
 
 ogInit = () => {
     document.write(`
-        <meta property="og:title" content="Maszon Studio. Nowy wymiar reklamy">
+        <meta property="og:title" content="Maszon Studio - Nowy wymiar reklamy🔥">
         <meta property="og:image" content="../assets/imgs/baner/baner.png">
         <meta property="og:description" content="
             Maszon Studio - profesjonalne studio zajmujące się tworzeniem nietuzinkowych stron internetowych oraz nowoczesnych projektów graficznych.
