@@ -25,7 +25,7 @@ const changePageAnimation = () => {
         .1,
         {
             opacity: 0,
-            delay: 3,
+            delay: 1.55,
         }
     );
 }
