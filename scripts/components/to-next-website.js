@@ -1,5 +1,23 @@
 const changePageAnimation = () => {
     TweenMax.to(
+        ".first-popup",
+        .01,
+        {
+            x: '-125%',
+            y: '-15vh', 
+            rotate: -13, 
+        }
+    );
+    TweenMax.to(
+        ".second-popup",
+        .01,
+        {
+            x: '-125%',
+            y: '-15vh', 
+            rotate: -13, 
+        }
+    );
+    TweenMax.to(
         ".to-next-websites",
         .01,
         {
