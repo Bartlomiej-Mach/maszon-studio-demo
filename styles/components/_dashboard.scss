@@ -1,0 +1,163 @@
+.dashboard-primary {
+    .dashboard-primary-content {
+        height: 100vh;
+        min-height: 1160px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 20px;
+        &__heading {
+            width: fit-content;
+            h1 {
+                display: inline-block;
+            }
+            .subheading {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                margin-top: 20px;
+                span {
+                    color: $color-white;
+                    margin-left: 20px;
+                    font-size: 3rem;
+                    line-height: 2.5rem;
+                    text-transform: uppercase;
+                    font-weight: $font-semi-bold;  
+                }
+                svg {
+                    height: 100%;
+                    path {
+                        transition: .2s;
+                    }
+                }
+                &:hover svg path{
+                   fill: $color-red;
+                }
+            
+            }
+        }
+        &__decoration-button {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 60px;
+            &--square {
+                width: 500px;
+                position: relative;
+                .text-content {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    background-color: $color-dark;
+                    z-index: 1;
+                    position: relative;  
+                    .big-text {
+                        font-size: 14.3rem;
+                        font-family: $font-anton;
+                        color: $color-white;
+                    }
+                    .small-text {
+                        color: $color-white;
+                        margin-left: 20px;
+                        text-transform: uppercase;
+                        line-height: 2.5rem;
+                        font-size: 3rem;
+                        font-weight: $font-semi-bold;
+                        a {
+                            color: $color-red;
+                        }
+                    }
+                }
+                .button-circle {
+                    position: absolute;   
+                    left: -50%;
+                    bottom: -100%;
+                    width: 383px;
+                    height: 383px;
+                    border-radius: 100%;
+                    background-color: transparent;
+                    border: 3px solid $color-gray;
+                    z-index: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: .2s;
+                    span {
+                        line-height: 2.5rem;
+                        font-size: 3rem;
+                        text-transform: uppercase;
+                        color: $color-gray;
+                        transition: .2s;
+                    }
+                    &:hover {
+                        border: 3px solid $color-white; 
+                    }
+                    &:hover span{
+                        color: $color-white;
+                    }
+                }
+            }
+        }
+    }   
+}
+
+
+@include break-point-down(md) {
+    .dashboard-primary {
+        .dashboard-primary-content {
+            justify-content: flex-start;
+            min-height: 1000px;
+            padding: 200px 0 0 0;
+        }
+    }
+}
+
+@include break-point-down(mb) {
+    .dashboard-primary {
+        .dashboard-primary-content {
+            min-height: 650px;
+            padding-top: 125px;
+            &__heading {
+                .subheading {
+                    margin-top: 10px;
+                    span {
+                        font-size: 2rem;
+                        line-height: 1.5rem;
+                        margin-left: 0px;
+                    }
+                    svg {
+                        height: 48px;
+                    }
+                }
+            }
+            &__decoration-button {
+                margin-top: 50px;
+                &--square {
+                    width: 260px;
+                    .text-content {
+                        .big-text {
+                            font-size: 10rem;
+                        }
+                        .small-text {
+                            font-size: 2rem;
+                            line-height: 1.5rem;
+                        }
+                    }
+                    .button-circle {
+                        width: 245px;
+                        height: 245px;
+                        left: 50%;
+                        bottom: -50%;
+                        transform: translate(-50%, 30%);
+                        span {
+                            font-size: 2rem;
+                            line-height: 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

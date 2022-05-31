@@ -1,0 +1,42 @@
+body, html {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    scroll-behavior: smooth;
+    background-color: $color-dark;
+}
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+::-moz-selection { 
+    color: $color-white;
+    background: $color-pink;
+  }
+::selection {
+    color: $color-white;
+    background: $color-pink;
+}
+
+
+
+body::-webkit-scrollbar {
+    width: 5px;
+    background: #000;
+  }
+body::-webkit-scrollbar-thumb {
+    background: #fff;
+    
+}

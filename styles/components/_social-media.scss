@@ -1,0 +1,148 @@
+.social-media {
+    margin-top: 200px;
+    margin-bottom: 80px;
+    .social-media-content {
+        display: flex;
+        align-items: center;
+        &__heading {
+            position: relative;
+            margin-right: 150px;
+            h2 {
+                color: $color-white;
+                min-width: 310px;
+                b {
+                    font-weight: $font-regular;
+                    color: $color-pink;
+                }
+            }
+            .arrows {
+                position: relative;
+                &--pc {
+                    position: absolute;
+                    right: -80px;
+                    bottom: -65px;
+                }
+                &--tab {
+                    display: none;
+                    position: absolute;
+                    right: -110px;
+                    top: -50px;
+                }
+            }
+        }
+        &__social {
+            display: flex;
+            width: 100%;
+            &--col {
+                width: 100%;
+                height: 250px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 25px;
+                position: relative;
+                overflow: hidden;
+                i {
+                    color: $color-white;
+                    font-size: 9rem;
+                    transition: .2s;
+                }
+                &:first-child {
+                    margin-right: 30px;
+                }
+                &:nth-child(1) {
+                    background-color: $color-facebook;
+                }
+                &:nth-child(2) {
+                    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+                }
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: -110%;
+                    width: 100%;
+                    height: 130%;
+                    background-color: $color-pink;
+                    opacity: .3;
+                    transition: .3s;
+                    transform: rotate(-15deg);
+                    transition-delay: .2s;
+                }
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: -110%;
+                    width: 100%;
+                    height: 130%;
+                    background-color: $color-red;
+                    opacity: .3;
+                    transition: .2s;
+                    transform: rotate(-15deg);
+                }
+                &:hover::before {
+                    transform: rotate(0deg);
+                    left: 0;
+                    transition-delay: .0s;
+                }
+                &:hover::after {
+                    transform: rotate(0deg);
+                    left: 0;
+                    transition-delay: .2s;
+                }
+                &:hover i {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+
+@include break-point-down(md) {
+    .social-media  {
+        margin-top: 100px;
+        overflow: hidden;
+        .social-media-content {
+            flex-direction: column;
+            align-items: flex-start;
+            &__heading {
+                margin-right: 0;
+                margin-bottom: 50px;
+                .arrows {
+                    &--pc {
+                        display: none;
+                    }
+                    &--tab {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include break-point-down(mb) {
+    .social-media  {
+        margin-top: 50px;
+        .social-media-content {
+            flex-direction: column;
+            align-items: flex-start;
+            &__heading {
+                .arrows {
+                    
+                    &--tab {
+                        right: -30px;
+                        top: -50px;
+                    }
+                }
+            }
+            &__social {
+                &--col {
+                    height: 150px;
+                    i {
+                        font-size: 5rem;
+                    }
+                }
+            }
+        }
+    }
+}

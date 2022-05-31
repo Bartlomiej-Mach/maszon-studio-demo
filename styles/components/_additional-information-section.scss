@@ -1,0 +1,110 @@
+.additional-information-section {
+    margin-bottom: 8rem;
+    .additional-information-section-content {
+        &__heading {
+            margin-bottom: 5rem;
+            h2 {
+                color: $color-white;
+                .h2-x {
+                    display: flex;
+                    align-items: flex-end;
+                    span {
+                        font-size: 3rem;
+                        line-height: 3rem;
+                    }
+                    div {
+                        position: relative;
+                        &::before,
+                        &::after {
+                            width: 105%;
+                            height: 2px;
+                            background-color: $color-red;
+                            content: '';
+                            left: 50%;
+                            top: 50%;
+                            position: absolute;
+                        }
+                        &::before {
+                            transform: translate(-50%, -50%) rotate(16deg);
+                        }
+                        &::after {
+                            transform: translate(-50%, -50%) rotate(-16deg);
+                        }
+                    }
+                }
+            }
+        }   
+        &__text {
+            color: $color-white;
+            display: flex;
+            &--left {
+                width: 50%;
+                padding-left: 2rem;
+                p {
+                    max-width: 45rem;
+                    font-size: 2.5rem;
+                }
+            }
+            &--right {
+                width: 50%;
+                h2 {
+                    margin-bottom: 5rem;
+                }
+                p {
+                    max-width: 45rem;
+                    font-size: 2.5rem;
+                    span {
+                        font-size: 2.5rem;
+                    }
+                    .fb-color {
+                        color: $color-facebook;
+                    }
+                    a {
+                        font-weight: $font-semi-bold;
+                        position: relative;
+                        overflow: hidden;
+                        width: fit-content;
+                        &::before {
+                            content: '';
+                            width: 0;
+                            height: 1px;
+                            background-color: $color-white;
+                            bottom: 2px;
+                            position: absolute;
+                            transition: .2s;
+                            right: 0;
+                        }
+                        &:hover::before {
+                            width: 100%;
+                            left: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include break-point-down(md) {
+    .additional-information-section {
+        .additional-information-section-content {
+            &__text {
+                flex-direction: column;
+                &--left {
+                    width: 100%;
+                    p {
+                        max-width: 100%;
+                    }
+                }
+                &--right {
+                    width: 100%;
+                    margin-top: 7rem;
+                    padding-left: 2rem;
+                    p {
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

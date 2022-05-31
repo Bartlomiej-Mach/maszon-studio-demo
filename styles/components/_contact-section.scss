@@ -1,0 +1,160 @@
+.contact-section {
+    width: 100%;
+    height: 2080px;
+    padding-top: 20rem;
+    overflow: hidden;
+    position: relative;
+    &__person-img {
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-image: url('../../assets/imgs/person/mystery.png');
+        background-position: center top;
+        background-size: cover;
+        z-index: 0;
+    }
+    &__owner-instagram {
+        position: absolute;
+        bottom: 50px;
+        z-index: 1;
+        left: 50%;
+        transform: translateX(-50%);
+        width: fit-content;
+        span {
+            color: $color-white;
+            font-size: 3rem;
+            line-height: 3rem;
+            font-weight: $font-semi-bold;
+            a {
+                span {
+                    color: $color-pink;
+                }
+            }
+        }
+        img {
+            position: absolute;
+            right: -30px;
+            top: -90px;
+        }
+    }
+    .contact-section-content {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        &__box {
+            width: 50%;
+            h2 {
+                color: $color-white;
+                margin-bottom: 8rem;
+            }
+            &--contact {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 10rem;
+                a {
+                    span {
+                        font-size: 3rem;
+                        font-weight: $font-semi-bold;
+                    }
+                    &:nth-child(1) {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+            &--contact-single {
+                margin-bottom: 10rem;
+                display: flex;
+                flex-direction: column;
+                span {
+                    font-size: 3rem;
+                    color: $color-white;
+                    font-weight: $font-semi-bold;
+                    &:nth-child(1) {
+                        margin-bottom: 10px;
+                    }
+                    a {
+                        color: #0075FF;
+                    }
+                    &:nth-child(2) {
+                        a {
+                            color: #16d485;
+                        }
+                    }
+                }
+            }
+            &--social {
+                display: flex;
+                flex-direction: column;
+                a {
+                    
+                    &:nth-child(1) {
+                        margin-bottom: 10px;
+                    }
+                    span {
+                        font-weight: $font-semi-bold;
+                        font-size: 3rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include break-point-down(md) {
+    .contact-section {
+        height: 1660px;
+    }
+}
+
+@include break-point-down(mb) {
+    .contact-section {
+        height: 988px;
+        padding-top: 7rem;
+        &__owner-instagram  {
+            left: 15px;
+            transform: translateX(0);
+            span {
+                font-size: 2rem;
+                line-height: 2rem;
+            }
+            img {
+                width: 42px;
+                top: -50px;
+            }
+        }
+        .contact-section-content {
+            &__box {
+                width: 100%;
+                h2 {
+                    margin-bottom: 5rem;
+                }
+                &--contact {
+                    margin-bottom: 5rem;
+                    a {
+                        span {
+                            font-size: 2rem;
+                        }
+                    }
+                }
+                &--contact-single {
+                    margin-bottom: 5rem;
+                    span {
+                        font-size: 2rem;
+                    }
+                }
+                &--social {
+                    a {
+                        span {
+                            font-size: 2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

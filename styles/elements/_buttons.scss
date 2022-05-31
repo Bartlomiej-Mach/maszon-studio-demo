@@ -1,0 +1,24 @@
+.btn-primary,
+.btn-secondary {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    span {
+        font-size: $font-text;
+        font-weight: $font-semi-bold;
+    }
+    img {
+        margin-left: 10px;
+        transform: translateY(-1px);
+        transition: .3s;
+    }
+    &:hover img{
+        transform: translate(10px, -1px);
+    }
+}
+.black-content {
+    span {
+        color: $color-black;
+    }
+}
+

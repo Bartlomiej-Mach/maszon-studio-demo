@@ -1,0 +1,101 @@
+.dashboard-projects {
+    .dashboard-projects-content {
+        display: flex;
+        &__col {
+            width: 25%;
+            height: 100vh;
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: $color-gray-darker;
+            position: relative;
+            overflow: hidden;
+            &--bg {
+                width: 100%;
+                height: 120%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                z-index: 0;
+                transition: .2s;
+                opacity: 0.5;
+            }
+            &__heading {
+                position: relative;
+                z-index: 1;
+                h2 {
+                    text-align: center;
+                    transition: .2s;
+                }
+            }
+            &__button {
+                position: relative;
+                z-index: 1;
+                position: absolute;
+                bottom: 150px;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                overflow: hidden;
+                .btn-primary {
+                    transition: .2s;
+                    transform: translateY(110%);
+                    span {
+                        color: $color-white;
+                    }
+                }
+            }
+            &:hover {
+                color: $color-white;
+                .dashboard-projects-content__col--bg {
+                    transform: translateY(-10%);
+                    opacity: 1;
+                }
+                .btn-primary {
+                    transform: translateY(0);
+                }
+            }
+            &:nth-child(1) {
+                .dashboard-projects-content__col--bg {
+                    background-image: url('../../assets/imgs/project-chooser/p1.png');
+                }
+            }
+            &:nth-child(2) {
+                .dashboard-projects-content__col--bg {
+                    background-image: url('../../assets/imgs/project-chooser/p2.png');
+                }
+            }
+            &:nth-child(3) {
+                .dashboard-projects-content__col--bg {
+                    background-image: url('../../assets/imgs/project-chooser/p3.png');
+                }
+            }
+            &:nth-child(4) {
+                .dashboard-projects-content__col--bg {
+                    background-image: url('../../assets/imgs/project-chooser/p4.png');
+                }
+            }
+        }
+    }
+}
+
+@include break-point-down(md) {
+    .dashboard-projects {
+        .dashboard-projects-content {
+            flex-direction: column;
+            &__col {
+                width: 100%;
+                height: 350px;
+                min-height: 350px;
+                &__button {
+                    bottom: 45px;
+                }
+            }
+        }
+    }
+}

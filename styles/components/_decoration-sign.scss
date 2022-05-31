@@ -1,0 +1,120 @@
+.decoration-sign {
+    margin-top: 120px;
+    margin-bottom: 100px;
+    overflow: hidden;
+    .decoration-sign-content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        span {
+            font-family: $font-anton;
+            color: $color-gray;
+            &:nth-child(1) {
+                font-size: 45px;
+                letter-spacing: 0.555em;
+                transform: translateX(15px);
+            }
+            &:nth-child(2) {
+                font-size: 33.3rem;
+                line-height: 33.3rem;
+                &::first-letter {
+                    color: $color-white;
+                }
+            }
+        }
+    }
+}
+
+.decoration-sign-2 {
+    margin-top: 120px;
+    margin-bottom: 100px;
+    overflow: hidden;
+    .decoration-sign-2-content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        span {
+            text-align: center;
+            font-family: $font-anton;
+            color: $color-gray;
+            &:nth-child(2) {
+                font-size: 45px;
+                letter-spacing: 0.455em;
+                transform: translateX(10px);
+            }
+            &:nth-child(1) {
+                font-size: 45rem;
+                line-height: 45rem;
+            }
+        }
+    }
+}
+
+@include break-point-down(md) {
+    .decoration-sign {
+        .decoration-sign-content {
+            span {
+                &:nth-child(1) {
+                    font-size: 38px;
+                    letter-spacing: 0.51em;
+                    transform: translateX(10px);
+                }
+                &:nth-child(2) {
+                    line-height: 27rem;
+                    font-size: 27rem;
+                }
+            }
+        }
+    }
+    .decoration-sign-2 {
+        .decoration-sign-2-content {
+            span {
+                &:nth-child(2) {
+                    font-size: 38px;
+                    letter-spacing: 0.185em;
+                    transform: translateX(10px);
+                }
+                &:nth-child(1) {
+                    line-height: 27rem;
+                    font-size: 27rem;
+                }
+            }
+        }
+    }
+}
+@include break-point-down(mb) {
+    .decoration-sign {
+        margin-top: 60px;
+        .decoration-sign-content {
+            span {
+                &:nth-child(1) {
+                    text-align: center;
+                    font-size: 28px;
+                    letter-spacing: 0.19em;
+                    transform: translateX(5px);
+                }
+                &:nth-child(2) {
+                    line-height: 12.8rem;
+                    font-size: 12.8rem;
+                }
+            }
+        }
+    }
+    .decoration-sign-2 {
+        margin-top: 60px;
+        margin-bottom: 0px;
+        .decoration-sign-2-content {
+            span {
+                &:nth-child(2) {
+                    font-size: 26px;
+                    letter-spacing: 0;
+                    transform: translateX(5px);
+                }
+                &:nth-child(1) {
+                    line-height: 12.8rem;
+                    font-size: 12.8rem;
+                }
+            }
+        }
+    }
+}

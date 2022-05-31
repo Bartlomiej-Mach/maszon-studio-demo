@@ -1,0 +1,84 @@
+.dashboard-each-projects {
+    height: 100vh;
+    min-height: 600px;
+    position: relative;
+    .dashboard-each-projects-content {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        height: 100vh;
+        min-height: 600px;
+        position: relative;
+        
+        &__heading {
+            position: relative;
+            padding-left: 4rem;
+            margin-bottom: 20rem;
+            width: fit-content;
+            &--arrow {
+                position: absolute;
+                left: 0;
+                top: 0;
+                transform: translateY(7px);
+                img {
+                    &:nth-child(2) {
+                        display: none;
+                    }
+                }
+            }
+            &--subheading {
+                display: flex;
+                justify-content: flex-end;
+                span {
+                    color: $color-white;
+                    font-size: 3rem;
+                    line-height: 3rem;
+                    font-weight: $font-semi-bold;
+                }
+            }
+        }
+    }
+    &__bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .website-bg {
+        background-image: url('../../assets/imgs/project-chooser/p1.png');
+    }
+    .graphic-bg {
+        background-image: url('../../assets/imgs/project-chooser/p2.png');
+    }
+    .logo-bg {
+        background-image: url('../../assets/imgs/project-chooser/p3.png');
+    }
+    .buissnes-card-bg {
+        background-image: url('../../assets/imgs/project-chooser/p4.png');
+    }
+}
+
+@include break-point-down(mb) {
+    .dashboard-each-projects {
+        .dashboard-each-projects-content {
+            &__heading {
+                padding-left: 2.5rem;
+                &--arrow {
+                    transform: translateY(0px);
+                    img {
+                        &:nth-child(1) {
+                            display: none;
+                        }
+                        &:nth-child(2) {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

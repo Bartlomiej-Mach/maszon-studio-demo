@@ -1,0 +1,365 @@
+.dashboard-website-projects {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    &__fixed-img {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 0;
+    }
+    .container {
+        min-height: 500px;
+        position: relative;
+    }
+    .dashboard-website-projects-content {
+        width: 50%;
+        position: relative;
+        max-width: 500px;
+        min-height: 100vh;
+        background-color: rgba($color: $color-black, $alpha: .9);
+        padding: 0 3rem 12rem 3rem;
+        &__link-to-web {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            &--img {
+                width: 60%;
+                max-width: 410px;
+                min-width: 300px;
+                background-color: white;
+                height: 44rem;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            &--link {
+                position: absolute;
+                width: 140px;
+                left: 0px;
+                bottom: -70px;
+                animation: rotate360-flat 10s linear infinite;
+                text {
+                    font-size: 6rem;
+                    font-family: $font-anton;
+                    font-weight: bold;
+                    font-variant: small-caps;
+                    font-variant-ligatures: none;
+                    fill: $color-white;
+                    transition: .2s;
+                    transition-delay: .2s;
+                    
+                }
+                &:hover text{
+                    fill: $color-gray-light;
+                    transition-delay: .0s;
+                }
+            }
+        }
+        .no-margin {
+            margin-top: 0px;
+            padding-top: 180px;
+        }
+        &__text {
+            margin-top: 170px;
+            span {
+                color: $color-white;
+                font-size: 3rem;
+                line-height: 3rem;
+                font-weight: $font-semi-bold;
+            }
+            p {
+                margin-top: 6rem;
+                color: $color-white;
+            }
+            h1 {
+                font-size: $font-h1-tab;
+                line-height: $font-h1-tab;
+            }
+        }
+        &__project-show {
+            width: 100%;
+            margin-top: 4rem;
+            img {
+                width: 100%;
+                margin-bottom: 3rem;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .dashboard-website-projects-back-button {
+        position: absolute;
+        right: 120px;
+        top: 200px;
+        span {
+            color: $color-white;
+            font-size: 3rem;
+            line-height: 3rem;
+            font-weight: $font-semi-bold;
+            position: relative;
+            transition: .2s;
+        }
+        &::before {
+            content: '';
+            right: -20px;
+            position: absolute;
+            background-color: $color-black;
+            width: 50px;
+            height: 50px;
+            top: 40%;
+            transform: translateY(-50%);
+            transition: .2s;
+            pointer-events: none;
+        }
+        &:hover::before {
+            background-color: $color-white;
+            right: 60%;
+        }
+        &:hover span {
+            color: $color-black;
+        }
+    }
+    
+    .project-1 {
+        background-image: url('../../assets/imgs/projects/website/w1.png');
+    }
+    .project-2 {
+        background-image: url('../../assets/imgs/projects/website/w2.png');
+    }
+    .project-3 {
+        background-image: url('../../assets/imgs/projects/website/w3.png');
+    }
+    .project-4 {
+        background-image: url('../../assets/imgs/projects/website/w4.png');
+    }
+    .project-5 {
+        background-image: url('../../assets/imgs/projects/website/w5.png');
+    }
+    .project-6 {
+        background-image: url('../../assets/imgs/projects/website/w6.png');
+    }
+    .project-7 {
+        background-image: url('../../assets/imgs/projects/website/w7.png');
+    }
+
+    .project-1-mini {
+        background-image: url('../../assets/imgs/projects/website/mini/w1.png');
+    }
+    .project-2-mini {
+        background-image: url('../../assets/imgs/projects/website/mini/w2.png');
+    }
+    .project-3-mini {
+        background-image: url('../../assets/imgs/projects/website/mini/w3.png');
+    }
+    .project-4-mini {
+        background-image: url('../../assets/imgs/projects/website/mini/w4.png');
+    }
+    .project-5-mini {
+        background-image: url('../../assets/imgs/projects/website/mini/w5.png');
+    }
+    .project-6-mini {
+        background-image: url('../../assets/imgs/projects/website/mini/w6.png');
+    }
+    .project-7-mini {
+        background-image: url('../../assets/imgs/projects/website/mini/w7.png');
+    }
+}
+.logos {
+    .dashboard-website-projects-content {
+        opacity: 0;
+    }
+    .project-1 {
+        background-image: url('../../assets/imgs/projects/logo/l1.png');
+    }
+    .project-2 {
+        background-image: url('../../assets/imgs/projects/logo/l2.png');
+    }
+    .project-3 {
+        background-image: url('../../assets/imgs/projects/logo/l3.png');
+    }
+    .project-4 {
+        background-image: url('../../assets/imgs/projects/logo/l4.png');
+    }
+    .project-5 {
+        background-image: url('../../assets/imgs/projects/logo/l5.png');
+    }
+    .project-6 {
+        background-image: url('../../assets/imgs/projects/logo/l6.png');
+    }
+    .project-7 {
+        background-image: url('../../assets/imgs/projects/logo/l7.png');
+    }
+    .project-8 {
+        background-image: url('../../assets/imgs/projects/logo/l8.png');
+    }
+    .project-9 {
+        background-image: url('../../assets/imgs/projects/logo/l9.png');
+    }
+    .project-10 {
+        background-image: url('../../assets/imgs/projects/logo/l10.png');
+    }
+    .project-11 {
+        background-image: url('../../assets/imgs/projects/logo/l11.png');
+    }
+    .project-12 {
+        background-image: url('../../assets/imgs/projects/logo/l12.png');
+    }
+    .project-13 {
+        background-image: url('../../assets/imgs/projects/logo/l13.png');
+    }
+}
+
+.cards {
+    .dashboard-website-projects-content {
+        opacity: 0;
+    }
+    .project-1 {
+        background-image: url('../../assets/imgs/projects/cards/c1.png');
+    }
+    .project-2 {
+        background-image: url('../../assets/imgs/projects/cards/c2.png');
+    }
+    .project-3 {
+        background-image: url('../../assets/imgs/projects/cards/c3.png');
+    }
+    .project-4 {
+        background-image: url('../../assets/imgs/projects/cards/c4.png');
+    }
+    .project-5 {
+        background-image: url('../../assets/imgs/projects/cards/c5.png');
+    }
+    .project-6 {
+        background-image: url('../../assets/imgs/projects/cards/c6.png');
+    }
+    .project-7 {
+        background-image: url('../../assets/imgs/projects/cards/c7.png');
+    }
+    .project-8 {
+        background-image: url('../../assets/imgs/projects/cards/c8.png');
+    }
+
+    .project-1-mini {
+        background-image: url('../../assets/imgs/projects/cards/mini/c1.png');
+    }
+    .project-2-mini {
+        background-image: url('../../assets/imgs/projects/cards/mini/c2.png');
+    }
+    .project-3-mini {
+        background-image: url('../../assets/imgs/projects/cards/mini/c3.png');
+    }
+    .project-4-mini {
+        background-image: url('../../assets/imgs/projects/cards/mini/c4.png');
+    }
+    .project-5-mini {
+        background-image: url('../../assets/imgs/projects/cards/mini/c5.png');
+    }
+    .project-6-mini {
+        background-image: url('../../assets/imgs/projects/cards/mini/c6.png');
+    }
+    .project-7-mini {
+        background-image: url('../../assets/imgs/projects/cards/mini/c7.png');
+    }
+    .project-8-mini {
+        background-image: url('../../assets/imgs/projects/cards/mini/c8.png');
+    }
+}
+.graphic {
+    .dashboard-website-projects-content {
+        opacity: 0;
+    }
+    .project-1 {
+        background-image: url('../../assets/imgs/projects/graphic/g1.png');
+    }
+    .project-2 {
+        background-image: url('../../assets/imgs/projects/graphic/g2.png');
+    }
+    .project-3 {
+        background-image: url('../../assets/imgs/projects/graphic/g3.png');
+    }
+
+    .project-1-mini {
+        background-image: url('../../assets/imgs/projects/graphic/mini/g1.png');
+    }
+    .project-2-mini {
+        background-image: url('../../assets/imgs/projects/graphic/mini/g2.png');
+    }
+    .project-3-mini {
+        background-image: url('../../assets/imgs/projects/graphic/mini/g3.png');
+    }
+}
+
+@keyframes rotate360-flat {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    }
+}
+
+
+@include break-point-down(md) {
+    .dashboard-website-projects {
+        .container {
+            padding: 0;
+            margin: 0;
+        }
+        .dashboard-website-projects-content {
+            
+            &__text {
+                p {
+                    margin-top: 4rem;
+                }   
+            }
+        }
+    }
+}
+
+@include break-point-down(mb) {
+    .dashboard-website-projects {
+        .container {
+            display: flex;
+            align-items: flex-end;
+            min-height: 100vh;
+        }
+        .dashboard-website-projects-content {
+            min-height: fit-content;
+            max-width: 100%;
+            width: 100%;
+            padding: 0 1.5rem 4rem 1.5rem;
+            &__link-to-web {
+                justify-content: flex-start;
+                &--img {
+                    display: none;
+                }
+                &--link {
+                    left: 0;
+                    bottom: -40px;
+                }
+            }
+            
+            &__text {
+                margin-top: 6rem;
+                span {
+                    font-size: 2.5rem;
+                }
+                p {
+                    margin-top: 3rem;
+                }   
+            }
+        }
+        .dashboard-website-projects-back-button {
+            right: 30px;
+            top: 150px;
+        }
+    }
+}

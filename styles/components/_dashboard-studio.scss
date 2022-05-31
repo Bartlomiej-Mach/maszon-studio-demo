@@ -1,0 +1,81 @@
+.dashboard-studio {
+    height: 100vh;
+    min-height: 600px;
+    position: relative;
+    display: flex;
+    padding-bottom: 100px;
+    .dashboard-mini__bg {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url('../../assets/imgs/dashboard-imgs/studio.png');
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+    .container {
+        width: 100%;
+    }
+    .dashboard-studio-content {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        &__heading {
+            .subheading {
+                font-size: 3rem;
+                line-height: 3rem;
+                color: $color-white;
+                font-weight: $font-semi-bold;
+                margin-bottom: 20px;
+                display: block;
+            }
+            h1 {
+                span {
+                    font-size: 3rem;
+                    line-height: 3rem;
+                    font-weight: $font-semi-bold;
+                }
+            }
+        }
+        &__subheading {
+            span {
+                color: $color-white;
+                font-weight: $font-semi-bold;
+                max-width: 420px;
+                font-size: 3rem;
+                line-height: 3rem;
+                margin-left: 10px;
+                display: block;
+            }
+        }
+    }
+}
+
+
+
+@include break-point-down(mb) {
+    .dashboard-studio {
+        .dashboard-studio-content {
+            padding-top: 15rem;
+            align-items: flex-start;
+            flex-direction: column;
+            justify-content: flex-start;
+            &__heading {
+                span {
+                    font-size: 2.5rem;
+                    line-height: 2.5rem;
+                }
+            }
+            &__subheading {
+                span {
+                    font-size: 2.5rem;
+                    line-height: 2.5rem;
+                    margin: 15px 0 0 0;
+                }
+            }
+        }
+    }
+}

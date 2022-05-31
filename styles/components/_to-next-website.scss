@@ -1,0 +1,45 @@
+.to-next-websites {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    z-index: 10000;
+    pointer-events: none;
+    .to-next-websites__popup {
+        width: 100%;
+        height: 150vh;
+        top: -15vh;
+        left: 0;
+        transform: translate(-125%) rotate(-13deg);
+        position: absolute;
+        &:nth-child(1) {
+            background-color: $color-gray-light;
+        }
+        &:nth-child(2) {
+            background-color: $color-white;
+        }
+    }
+}
+
+.from-prev-websites {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    z-index: 10000;
+    pointer-events: none;
+    .from-prev-websites__popup {
+        width: 100%;
+        height: 150vh;
+        top: -15vh;
+        left: 0;
+        position: absolute;
+        &:nth-child(1) {
+            background-color: $color-gray-light;
+        }
+        &:nth-child(2) {
+            background-color: $color-white;
+        }
+    }
+}
+
