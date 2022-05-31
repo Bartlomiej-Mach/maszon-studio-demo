@@ -1946,6 +1946,18 @@ body::-webkit-scrollbar-thumb {
   z-index: 3;
 }
 
+@media (max-width: 745px) {
+  .welcome-animation__first-step--company-name {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .dashboard-about {
   height: 100vh;
   min-height: 600px;

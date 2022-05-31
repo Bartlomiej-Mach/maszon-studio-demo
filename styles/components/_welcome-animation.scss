@@ -69,3 +69,14 @@
         z-index: 3;
     }
 }
+
+@include break-point-down(mb) {
+    .welcome-animation {
+        &__first-step {
+            &--company-name {
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+    }
+}
