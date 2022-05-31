@@ -68,6 +68,15 @@ const newFlyElement = document.querySelectorAll('.project-img-inner__img');
 const StartAnimationOnClick = (el) => {
     TweenMax.to(
         newFlyElement[el],
+        .01,
+        {   
+            opacity: 1,
+            y: 0,
+            "clip-path": "polygon(0 0, 100% 30%, 100% 100%, 0% 100%)",
+        }
+    );
+    TweenMax.to(
+        newFlyElement[el],
         .3,
         {   
             "clip-path": "polygon(0 0, 100% 0%, 100% 100%, 0% 100%)",
