@@ -54,6 +54,8 @@
 
 @include break-point-down(md) {
     .information-section  {
+        height: 100%;
+        padding-bottom: 3rem;
         .information-section-content {
             margin-top: 10rem;
             max-width: 100%;
