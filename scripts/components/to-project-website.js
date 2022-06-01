@@ -89,7 +89,7 @@ const StartAnimationOnClick = (el) => {
         .1,
         {   
             opacity: 0,
-            delay: 0.9,
+            delay: 1,
         }
     );
 }
