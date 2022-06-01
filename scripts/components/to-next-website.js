@@ -76,10 +76,16 @@ const changePage = () => {
 
     const elementButtons = document.querySelectorAll('.ofert-section-content__floor__img');
 
+    const cricleButton = document.querySelector('.button-circle');
+
     if(buttonPrimary) {
         buttonPrimary.forEach(element => {
             element.addEventListener('click', changePageAnimation);
         });
+    }
+
+    if(cricleButton) {
+        cricleButton.addEventListener('click', changePageAnimation);
     }
 
     if(homeGaleryImg) {
