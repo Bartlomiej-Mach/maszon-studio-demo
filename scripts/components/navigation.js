@@ -4,7 +4,7 @@ document.write(`
         <div class="container">
             <div class="navigation-primary-content">
                 <div class="navigation-primary-content__logo-container">
-                    <a class="navigation-primary-content__logo-container--logo" href="javascript:delayLink('../intro.html')">
+                    <a class="navigation-primary-content__logo-container--logo" href="javascript:delayLink('../intro')">
                         <img src="../assets/imgs/logo/logo.svg" alt="Maszon Studio">
                         <div class="sub-logo">
                             <span>
@@ -32,7 +32,7 @@ document.write(`
                         <div class="navigation-primary-content__navigation-container--nav-list--inner"></div>
                         <ul>
                             <li>
-                                <a href="javascript:delayLink('../intro.html')" class="nav-link">
+                                <a href="javascript:delayLink('../intro')" class="nav-link">
                                     <div class="text-box top">
                                         <span>INTRO</span>
                                     </div>
@@ -42,7 +42,7 @@ document.write(`
                                 </a>
                             </li>
                             <li>
-                                <a href="javascript:delayLink('../projekty.html')" class="nav-link reverse-hover">
+                                <a href="javascript:delayLink('../projekty')" class="nav-link reverse-hover">
                                     <div class="text-box top">
                                         <span>PROJEKTY</span>
                                     </div>
@@ -52,7 +52,7 @@ document.write(`
                                 </a>
                             </li>
                             <li>
-                                <a href="javascript:delayLink('../studio.html')" class="nav-link">
+                                <a href="javascript:delayLink('../studio')" class="nav-link">
                                     <div class="text-box top">
                                         <span>STUDIO</span>
                                     </div>
@@ -62,7 +62,7 @@ document.write(`
                                 </a>
                             </li>
                             <li>
-                                <a href="javascript:delayLink('../kontakt.html')" class="nav-link reverse-hover">
+                                <a href="javascript:delayLink('../kontakt')" class="nav-link reverse-hover">
                                     <div class="text-box top">
                                         <span>KONTAKT</span>
                                     </div>

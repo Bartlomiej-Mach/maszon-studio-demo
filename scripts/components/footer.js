@@ -4,7 +4,7 @@ document.write(`
         <div class="container">
             <div class="footer-primary-content">
                 <div class="footer-primary-content__logo">
-                    <a class="footer-primary-content__logo--logo" href="javascript:delayLink('../intro.html')">
+                    <a class="footer-primary-content__logo--logo" href="javascript:delayLink('../intro')">
                         <img src="../assets/imgs/logo/logo.svg" alt="logo">
                     </a>
                 </div>
@@ -22,7 +22,7 @@ document.write(`
                 <div class="footer-primary-content__nav">
                     <ul>
                         <li>
-                            <a class="footer-link" href="javascript:delayLink('../intro.html')">
+                            <a class="footer-link" href="javascript:delayLink('../intro')">
                                 <div class="text-box top">
                                     <span>INTRO</span>
                                 </div>
@@ -32,7 +32,7 @@ document.write(`
                             </a>
                         </li>
                         <li>
-                            <a class="footer-link" href="javascript:delayLink('../projekty.html')">
+                            <a class="footer-link" href="javascript:delayLink('../projekty')">
                                 <div class="text-box top">
                                     <span>PROJEKTY</span>
                                 </div>
@@ -42,7 +42,7 @@ document.write(`
                             </a>
                         </li>
                         <li>
-                            <a class="footer-link" href="javascript:delayLink('../studio.html')">
+                            <a class="footer-link" href="javascript:delayLink('../studio')">
                                 <div class="text-box top">
                                     <span>STUDIO</span>
                                 </div>
@@ -52,7 +52,7 @@ document.write(`
                             </a>
                         </li>
                         <li>
-                            <a class="footer-link" href="javascript:delayLink('../kontakt.html')">
+                            <a class="footer-link" href="javascript:delayLink('../kontakt')">
                                 <div class="text-box top">
                                     <span>KONTAKT</span>
                                 </div>
